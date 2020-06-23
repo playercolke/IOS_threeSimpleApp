@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UIViewController {
 
+    
+    var events:[NSManagedObject] = []
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        loadDataFromDatabase()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadDataFromDatabase()
+        tableView.reloadData()
+    }
 
 }
 
