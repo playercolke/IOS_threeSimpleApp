@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  CalendarViewController.swift
 //  Planner
 //
 //  Created by 郑植 on 6/22/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class CalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,4 +17,3 @@ class FirstViewController: UIViewController {
 
 
 }
-
