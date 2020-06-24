@@ -197,6 +197,7 @@
                         <outlet property="dateChangeButton" destination="uZu-bs-owS" id="KSW-aX-MlX"/>
                         <outlet property="dueDate" destination="K4z-rY-4aj" id="hRA-EF-WCM"/>
                         <outlet property="eventName" destination="eNf-gI-rda" id="JWY-0y-Om3"/>
+                        <outlet property="scrollView" destination="zmC-c5-rxe" id="R8j-8u-vNR"/>
                         <outlet property="sgmtEditMode" destination="9Aa-k6-99J" id="b0h-bG-tZ9"/>
                     </connections>
                 </viewController>
