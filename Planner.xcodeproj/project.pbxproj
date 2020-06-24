@@ -10,7 +10,6 @@
 		BC9C3E7D24A163FE008340F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3E7C24A163FE008340F7 /* AppDelegate.swift */; };
 		BC9C3E7F24A163FE008340F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3E7E24A163FE008340F7 /* SceneDelegate.swift */; };
 		BC9C3E8124A163FE008340F7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3E8024A163FE008340F7 /* TableViewController.swift */; };
-		BC9C3E8324A163FE008340F7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3E8224A163FE008340F7 /* SecondViewController.swift */; };
 		BC9C3E8624A163FE008340F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9C3E8424A163FE008340F7 /* Main.storyboard */; };
 		BC9C3E8924A163FE008340F7 /* Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3E8724A163FE008340F7 /* Planner.xcdatamodeld */; };
 		BC9C3E8B24A163FF008340F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9C3E8A24A163FF008340F7 /* Assets.xcassets */; };
@@ -20,6 +19,7 @@
 		BC9C3EA724A293B3008340F7 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EA624A293B3008340F7 /* DateViewController.swift */; };
 		BC9C3EB024A2E75C008340F7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EAE24A2E75C008340F7 /* TableViewCell.swift */; };
 		BC9C3EB124A2E75C008340F7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC9C3EAF24A2E75C008340F7 /* TableViewCell.xib */; };
+		BC9C3EB324A2EE42008340F7 /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C3EB224A2EE42008340F7 /* ClassesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		BC9C3E7C24A163FE008340F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9C3E7E24A163FE008340F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC9C3E8024A163FE008340F7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		BC9C3E8224A163FE008340F7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BC9C3E8524A163FE008340F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC9C3E8824A163FE008340F7 /* Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planner.xcdatamodel; sourceTree = "<group>"; };
 		BC9C3E8A24A163FF008340F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		BC9C3EA624A293B3008340F7 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		BC9C3EAE24A2E75C008340F7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BC9C3EAF24A2E75C008340F7 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		BC9C3EB224A2EE42008340F7 /* ClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,6 @@
 				BC9C3E7C24A163FE008340F7 /* AppDelegate.swift */,
 				BC9C3E7E24A163FE008340F7 /* SceneDelegate.swift */,
 				BC9C3E8024A163FE008340F7 /* TableViewController.swift */,
-				BC9C3E8224A163FE008340F7 /* SecondViewController.swift */,
 				BC9C3E8424A163FE008340F7 /* Main.storyboard */,
 				BC9C3E8A24A163FF008340F7 /* Assets.xcassets */,
 				BC9C3E8C24A163FF008340F7 /* LaunchScreen.storyboard */,
@@ -84,6 +83,7 @@
 				BC9C3EA624A293B3008340F7 /* DateViewController.swift */,
 				BC9C3EAE24A2E75C008340F7 /* TableViewCell.swift */,
 				BC9C3EAF24A2E75C008340F7 /* TableViewCell.xib */,
+				BC9C3EB224A2EE42008340F7 /* ClassesViewController.swift */,
 			);
 			path = Planner;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 			files = (
 				BC9C3EA724A293B3008340F7 /* DateViewController.swift in Sources */,
 				BC9C3E9624A165DA008340F7 /* CalendarViewController.swift in Sources */,
-				BC9C3E8324A163FE008340F7 /* SecondViewController.swift in Sources */,
 				BC9C3EB024A2E75C008340F7 /* TableViewCell.swift in Sources */,
 				BC9C3E8924A163FE008340F7 /* Planner.xcdatamodeld in Sources */,
+				BC9C3EB324A2EE42008340F7 /* ClassesViewController.swift in Sources */,
 				BC9C3E8124A163FE008340F7 /* TableViewController.swift in Sources */,
 				BC9C3E9B24A240B5008340F7 /* EventViewController.swift in Sources */,
 				BC9C3E7D24A163FE008340F7 /* AppDelegate.swift in Sources */,
