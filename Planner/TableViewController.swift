@@ -50,13 +50,14 @@ class TableViewController: UITableViewController {
 
      
       override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell", for: indexPath)
-          
+          let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell", for: indexPath) as! TableViewCell
           // Configure the cell...
           let event = events[indexPath.row] as? Event
-          cell.textLabel?.text = event?.eventName
-          cell.detailTextLabel?.text = event?.classes
-          cell.accessoryType = .detailDisclosureButton
+          cell.main.text = event?.eventName
+          cell.subTitle.text = event?.classes
+          let formatter = DateFormatter()
+          formatter.dateStyle = .short
+          cell.time.text = formatter.string(from: (event?.dueDate)!)
           return cell
       }
     

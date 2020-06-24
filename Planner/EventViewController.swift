@@ -48,6 +48,10 @@ class EventViewController: UIViewController, UITextFieldDelegate, DateController
         }
         currentEvent?.eventName = eventName.text
         currentEvent?.classes = classes.text
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "MM/dd/yy"
+        currentEvent?.dueDate = formatter.date(from: (dueDate.text)!)
         return true
     }
     
