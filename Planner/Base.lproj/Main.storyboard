@@ -85,6 +85,52 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="-320.08928571428572"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="xut-8y-rFa">
+            <objects>
+                <tableViewController id="2Lj-lH-Fm3" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fsX-z8-es8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yM5-xf-8ki">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yM5-xf-8ki" id="I6m-6k-98w">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Lj-lH-Fm3" id="u1A-Cg-2S2"/>
+                            <outlet property="delegate" destination="2Lj-lH-Fm3" id="AVV-sR-VUF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="LmV-Dx-31x"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kau-oE-0dR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="376"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="igF-Lv-7Xs">
+            <objects>
+                <navigationController id="28b-BI-ABg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="classes" selectedImage="classes" id="nvV-nu-tX1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z9o-ml-5A2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Lj-lH-Fm3" kind="relationship" relationship="rootViewController" id="gt6-QJ-fWi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZm-MA-9rB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="376"/>
+        </scene>
         <!--Event View Controller-->
         <scene sceneID="jGm-cV-8Oo">
             <objects>
@@ -236,28 +282,6 @@
             </objects>
             <point key="canvasLocation" x="3252" y="-320"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Planner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IYj-QS-t83">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="classes" selectedImage="classes" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
-        </scene>
         <!--Calendar View Controller-->
         <scene sceneID="MKX-jU-eMk">
             <objects>
@@ -286,8 +310,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="bZH-0V-lrI" kind="relationship" relationship="viewControllers" id="3i5-m9-JoF"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="zYo-t5-E5a"/>
-                        <segue destination="gKn-BD-g9a" kind="relationship" relationship="viewControllers" id="811-DZ-s11"/>
+                        <segue destination="28b-BI-ABg" kind="relationship" relationship="viewControllers" id="wjy-Hq-pOU"/>
+                        <segue destination="gKn-BD-g9a" kind="relationship" relationship="viewControllers" id="Kwn-ut-XKE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

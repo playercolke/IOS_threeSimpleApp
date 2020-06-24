@@ -19,6 +19,11 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         loadDataFromDatabase()
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        let convertedDate = formatter.string(from: date)
+        self.title = convertedDate
     }
     
     override func viewWillAppear(_ animated: Bool) {
