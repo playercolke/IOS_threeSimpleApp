@@ -1,5 +1,8 @@
 //
 //  FirstViewController.swift
+// Jiating Su
+// 111665989
+//
 //  Planner
 //
 //  Created by 郑植 on 6/22/20.
